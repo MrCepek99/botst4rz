@@ -12,12 +12,12 @@ const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
-const BotName = 'C3P3K312s BOT 🤖'; // Nama Bot Whatsapp
-const instagramlu = 'https://instagram.com/cepekers.channel'; // Nama Instagramlu cok
+const BotName = 'ST4RZ BOT 🤖'; // Nama Bot Whatsapp
+const instagramlu = 'https://instagram.com/bintang_nur_pradana'; // Nama Instagramlu cok
 const whatsapplu = '0858-1205-2529'; // Nomor whatsapplu cok
 const kapanbotaktif = '24 Jam'; // Kapan bot lu aktif
-const grupch1 = 'https://chat.whatsapp.com/IwRFfd3gQrzJWyD9lCtlFM'; // OFFICIAL GRUP LU 1
-const grupch2 = 'https://chat.whatsapp.com/EKgD6NY8AFX1tXj54Zcd3j'; // OFFICIAL GRUP LU 2
+const grupch1 = 'https://chat.whatsapp.com/FsAlnxqz6y2BhCQi5ayCLG'; // OFFICIAL GRUP LU 1
+const grupch2 = 'https://chat.whatsapp.com/KLW3UlFfeaH36Ucm5zRfCz'; // OFFICIAL GRUP LU 2
 //
 const
 {
@@ -579,7 +579,7 @@ conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType
             var os = new os_func();
             os.execCommand('ytdl ' + url + ' -q highest -o mp4/' + videoid[1] + '.mp4').then(res =>
             {
-    const buffer = fs.readFileSync("mp4/"+ videoid[1] +".mp4")
+		const buffer = fs.readFileSync("mp4/"+ videoid[1] +".mp4")
                conn.sendMessage(id, buffer, MessageType.video)
             }).catch(err =>
             {
@@ -639,7 +639,7 @@ conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType
      _${kata}_
         
     
-  *~${author}*
+	*~${author}*
          `, MessageType.text
             );
          });
@@ -658,7 +658,7 @@ conn.sendMessage(id, 'kirim #ptl cewek/cowok\n\nContoh: #ptl cewek' ,MessageType
         imageToBase64(cewek) // Path to the image
         .then(
             (response) => {
-  var buf = Buffer.from(response, 'base64'); // Ta-da  
+	var buf = Buffer.from(response, 'base64'); // Ta-da	
               conn.sendMessage(
             id,
               buf,MessageType.image)
@@ -716,7 +716,7 @@ if (text.includes("#randomanime"))
         imageToBase64(cewek) // Path to the image
         .then(
             (response) => {
-  var buf = Buffer.from(response, 'base64'); // Ta-da  
+	var buf = Buffer.from(response, 'base64'); // Ta-da	
               conn.sendMessage(
             id,
               buf,MessageType.image)
@@ -762,12 +762,12 @@ gtts.save(filepath, suara, function() {
 });
 await new Promise(resolve => setTimeout(resolve, 500));
 
-  if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
+	if(suara.length > 200){ // check longness of text, because otherways google translate will give me a empty file
   msg.reply("Text kepanjangan bro!")
 }else{
 
 const buffer = fs.readFileSync(filepath)
-  conn.sendMessage(id , buffer , MessageType.audio);
+	conn.sendMessage(id , buffer , MessageType.audio);
 
 };
 
